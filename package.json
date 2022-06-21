@@ -6,6 +6,9 @@
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "start": "nx serve",
+    "serve:api": "nx serve",
+    "serve:web": "nx serve app-cm",
+    "serve:all": "npm runserve:api  \"  \"npm run serve:web \"",
     "build": "nx build",
     "test": "nx test"
   },

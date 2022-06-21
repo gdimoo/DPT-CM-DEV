@@ -1,5 +1,7 @@
-import { getJestProjects } from '@nrwl/jest';
+import type { Config } from '@jest/types';
 
-export default {
-  projects: getJestProjects(),
+const config: Config.InitialOptions = {
+    verbose: true
 };
+
+export default config;
